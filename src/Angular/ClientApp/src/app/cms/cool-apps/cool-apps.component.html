@@ -1,0 +1,13 @@
+<h1>Cool Apps</h1>
+
+<div class="main" *ngIf="!isLoading">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-10 page-body">
+        <h1>{{model.Title}}</h1>
+        oipopopo
+        <block *ngFor="let block of model.Blocks" [model]="block"></block>
+      </div>
+    </div>
+  </div>
+</div>
